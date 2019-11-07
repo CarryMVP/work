@@ -1,15 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <script src="js/vega.js" charset="utf-8"></script>
-    <script src="js/deckgl.min.js"></script>
-    <script src="TODO sanddance.js"></script>
+    <link rel="stylesheet" href="css/sanddance.css">
 </head>
-<body>
-    
+
+<body style="cursor: default;">
+    <header>
+        <h1>sanddance test</h1>
+    </header>
+
+    <div id="vis">
+        <div class="sanddance-root">
+            <div class="sanddance-gl" style="min-height: 100px; min-width: 100px; position: relative;"><canvas
+                    id="deckgl-overlay" width="700" height="700" tabindex="1"
+                    style="position: absolute; left: 0px; top: 0px; width: 100%; height: 100%; touch-action: none; user-select: none; -webkit-user-drag: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); outline: none; cursor: grab;"></canvas>
+            </div>
+            <div class="sanddance-panel">
+                <h4>Chart</h4>
+                <div class="sanddance-vegaControls">
+                    <div class="vega-bindings">
+                        <div class="vega-bind"><span class="vega-bind-name">Z scale proportion to Y</span><input
+                                type="range" name="RoleZ_ProportionSignal" min="0.2" max="2"
+                                step="0.1"><label>0.6</label></div>
+                        <div class="vega-bind"><span class="vega-bind-name">Text scale</span><input type="range"
+                                name="Text_ScaleSignal" min="1" max="5" step="0.5"><label>2</label></div>
+                        <div class="vega-bind"><span class="vega-bind-name">X axis text angle</span><input type="range"
+                                name="Text_AngleXSignal" min="0" max="90" step="1"><label>30</label></div>
+                        <div class="vega-bind"><span class="vega-bind-name">Y axis text angle</span><input type="range"
+                                name="Text_AngleYSignal" min="-90" max="100" step="1"><label>0</label></div>
+                        <div class="vega-bind"><span class="vega-bind-name">Mark opacity</span><input type="range"
+                                name="Mark_OpacitySignal" min="0.1" max="1" step="0.05"><label>1</label></div>
+                        <div class="vega-bind"><span class="vega-bind-name">Point size</span><input type="range"
+                                name="Chart_PointSizeSignal" min="1" max="25" step="1"><label>5</label></div>
+                        <div class="vega-bind"><span class="vega-bind-name">Color bin count</span><input type="range"
+                                name="RoleColor_BinCountSignal" min="1" max="20" step="1"><label>7</label></div>
+                        <div class="vega-bind"><span class="vega-bind-name">Color reverse</span><input type="checkbox"
+                                name="RoleColor_ReverseSignal"></div>
+                    </div>
+                </div>
+                <h4>Legend</h4>
+                <div class="sanddance-legend">
+                    <table>
+                        <tr>
+                            <th colspan="2">z</th>
+                        </tr>
+                        <tr class="legend-row" tabindex="0">
+                            <td class="symbol" title="">
+                                <div style="height:10px;width:10px;background-color:#eff3ff;border-color:#eff3ff"></div>
+                            </td>
+                            <td class="label" title="< 1000">&lt; 1000</td>
+                        </tr>
+                        <tr class="legend-row" tabindex="0">
+                            <td class="symbol" title="">
+                                <div style="height:10px;width:10px;background-color:#c6dbef;border-color:#c6dbef"></div>
+                            </td>
+                            <td class="label" title="1000–2000">1000–2000</td>
+                        </tr>
+                        <tr class="legend-row" tabindex="0">
+                            <td class="symbol" title="">
+                                <div style="height:10px;width:10px;background-color:#9ecae1;border-color:#9ecae1"></div>
+                            </td>
+                            <td class="label" title="2000–3000">2000–3000</td>
+                        </tr>
+                        <tr class="legend-row" tabindex="0">
+                            <td class="symbol" title="">
+                                <div style="height:10px;width:10px;background-color:#6baed6;border-color:#6baed6"></div>
+                            </td>
+                            <td class="label" title="3000–5000">3000–5000</td>
+                        </tr>
+                        <tr class="legend-row" tabindex="0">
+                            <td class="symbol" title="">
+                                <div style="height:10px;width:10px;background-color:#4292c6;border-color:#4292c6"></div>
+                            </td>
+                            <td class="label" title="5000–6000">5000–6000</td>
+                        </tr>
+                        <tr class="legend-row" tabindex="0">
+                            <td class="symbol" title="">
+                                <div style="height:10px;width:10px;background-color:#2171b5;border-color:#2171b5"></div>
+                            </td>
+                            <td class="label" title="6000–7000">6000–7000</td>
+                        </tr>
+                        <tr class="legend-row" tabindex="0">
+                            <td class="symbol" title="">
+                                <div style="height:10px;width:10px;background-color:#084594;border-color:#084594"></div>
+                            </td>
+                            <td class="label" title="≥ 7000">≥ 7000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="sanddance-unitControls">
+                    <div>
+                        <h4>Select &amp; Filter</h4>
+                        <div class="sanddance-selection"><button disabled="disabled">deselect</button><button
+                                disabled="disabled">isolate</button><button disabled="disabled">exclude</button><button
+                                disabled="disabled">reset</button></div>
+                        <div>
+                            <div class="sanddance-details-scroll"></div>
+                            <div class="sanddance-details"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/sanddance.js"></script>
 </body>
+
 </html>
