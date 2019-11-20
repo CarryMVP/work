@@ -1,0 +1,530 @@
+html,body,address,blockquote,div,dl,form,h1,h2,h3,h4,h5,h6,ol,p,pre,table,ul,dd,dt,li,tbody,td,tfoot,th,thead,tr,button,del,ins,map,object,a,abbr,acronym,b,bdo,big,br,cite,code,dfn,em,i,img,kbd,q,samp,small,span,strong,sub,sup,tt,var,legend,fieldset{margin:0;padding:0;}
+img,fieldset{border:0;}
+img{width:auto\9;height:auto;pointer-events:none;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+html{overflow-x:hidden;overflow-y:auto;-webkit-text-size-adjust:none;}
+a{text-decoration:none;color:#027b7e;outline:none;}
+a:hover{text-decoration:underline;}
+p{padding:0;}
+li{margin:0 0 .5em 0;padding:0;}
+input[type=search]{outline:none;-webkit-appearance:none;}
+input[type='search']::-webkit-search-decoration,input[type='search']::-webkit-search-cancel-button{display:none;}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+fieldset,img{border:0;}
+ul,ol{list-style:none;}
+table{border-spacing:0;border-collapse:collapse;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+small{font-size:12px;}
+h1,h2,h3,h4,h5,h6,button,input,select,textarea{font-size:100%;}
+label,input,select,form img,button,textarea{vertical-align:middle;}
+address,caption,cite,code,dfn,em,strong,th,optgroup{font-weight:normal;font-style:normal;}
+.clear:after{display:block;visibility:hidden;clear:both;height:0;content:'.';}
+.clear{display:inline-block;}
+* html .clear{height:1%;}
+.clear{display:block;}
+.pa{position:absolute;}
+html{width:100%;min-height:100%;}
+body,html{width:100%;min-height:100%;height: 100%;overflow: hidden;}
+body{font-family:Microsoft YaHei;font-size:12px;position:absolute;margin:0 auto;-webkit-user-select:none;-moz-user-select:none;color:#333;/*box-shadow:0 0 160px 0 #5c99e7;*/background:white;}
+/*//-ms代表【ie】内核识别码*/
+
+/*//-moz代表火狐【firefox】内核识别码*/
+
+/*//-webkit代表谷歌【chrome】/苹果【safari】内核识别码*/
+
+/*//-o代表欧朋【opera】内核识别码*/
+div{
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    user-select:none;
+}
+input{
+    -webkit-user-select: auto;
+}
+body{
+    background-image:url(../images/p1/bg.jpg);
+    background-repeat:no-repeat;/*图片适应窗口大小，这里设置的是不进行平铺*/
+    background-attachment: fixed;/*图片相对于浏览器固定,这里设置背景图片固定，不随内容滚动*/
+    background-origin: border-box;/*从边框区域显示*/
+    background-size:cover;/*指定图片大小，此时会保持图像的纵横比并将图像缩放成将完全覆盖背景定位区域的最小大小*/
+
+}
+.huxi{
+    animation:huxi 2s linear infinite;
+    -webkit-animation: huxi 2s linear infinite;
+}
+@-webkit-keyframes huxi{
+    from{opacity: 0.9;transform: scale(1);}
+    50%{opacity: 1;transform: scale(1.05);}
+    to{opacity: 0.9;transform: scale(1);}
+}
+.iphonex{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+}
+.img{
+    position: absolute;
+    margin: 0 auto;
+    left: 0rem;
+    right: 0rem;
+}
+.btn{
+    pointer-events: auto;
+}
+.bg{
+    position: absolute;
+    left: 0rem;
+    top: 0rem;
+    width: 100%;
+    height: 100%;
+}
+/*#p1,#p2,#p3,#p4,#p5,#p6,#p7{
+    display: none;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    min-height: 1466px; 
+}*/
+
+/*loding页面*/
+#loading{
+    /*display: none;*/
+    position: absolute;
+    margin: auto;
+    left: 0rem;
+    top: 0rem;
+    right: 0rem;
+    bottom: 0rem;
+    width: 100%;
+    height: 100%;
+    /*min-height: 1466rem;*/
+}
+#lod_img{
+    position: absolute;
+    top: 30rem;
+    left: 0rem;
+}
+
+#lod_jdt_k{
+    position: absolute;
+    top: 44rem;
+    left: 12.5rem;
+    background-color: #d6cfcf;
+    width: 21.9rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+}
+
+#lod_jdt{
+    background-color: #0f3e0f;
+    width: 21.9rem;
+    height: 0.5rem;
+    border-radius: 1rem;
+}
+#lod_time{
+    position: absolute;
+    top: 25rem;
+    left: 12rem;
+    font-size: 4rem;
+    color: #0f3e0f;
+}
+.swiper-container{
+    width: 100%;
+    visibility: hidden;
+}
+
+/*p1页面*/
+#app{
+    width: 90%;
+    height: 75rem;
+    /*margin-top: 10%;*/
+    /*margin-left: 5%;*/
+    margin: auto;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    bottom: 0rem;
+    right: 0rem;
+}
+.d_tb{
+    position: absolute;
+    /*top: 66rem;*/
+    left: 12rem;
+    bottom: 7rem;
+}
+
+/*02页面*/
+#p2_1_div{
+    position: absolute;
+    top: 14rem;
+    left: 4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+#p2_2_img{
+    position: absolute;
+    top: 30rem;
+    left: 0rem;
+    transform: scale(1.2);
+}
+#p2_3_div{
+    position: absolute;
+    top: 18rem;
+    left: 0rem;
+    font-size: 2.7rem;
+    width: 40rem;
+    /* border: 1px solid red; */
+    font-weight: 600;
+    text-align: center;
+}
+#p2_4_div{
+    position: absolute;
+    top: 55rem;
+    left: 3rem;
+    font-size: 1.8rem;
+    width: 37rem;
+}
+#p2_dt_wz{
+   position: absolute;
+    left: 15rem;
+    bottom: 6.2rem;
+    width: 32rem;
+    height: 3rem;
+    text-align: left;
+    line-height: 3rem;
+    font-size: 1.6rem;
+    color: #00451b;
+    font-weight: 600;
+}
+
+/* 03页面 */
+#p3_1_div{
+    position: absolute;
+    top: 13rem;
+    left: 2rem;
+    width: 38rem;
+    height: 40rem;  
+}
+#p3_1_div_bt{
+    width: 38rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: pre;
+}
+#p3_1_img{
+    position: absolute;
+    top: 10rem;
+    left: 0rem;
+    transform: scale(1.2);
+}
+#p3_db_img{
+    position: absolute;
+    top: 34rem;
+    left: 0rem;
+}
+#p3_1_rs{
+    position: absolute;
+    top: 33.6rem;
+    left: 11rem;
+    font-size: 1.6rem;
+    color: white;
+    vertical-align: middle;
+    height: 4rem;
+    line-height: 4rem;
+}
+#p3_1_rs span{
+    font-size: 2.3rem;
+    vertical-align: bottom;
+}
+
+#p3_2_div{
+    position: absolute;
+    top: 52rem;
+    left: 2rem;
+    width: 38rem;
+    height: 16rem;
+}
+#p3_2_div_bt{
+    position: absolute;
+    width: 38rem;
+    font-size: 2.45rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: pre;
+    top: 50px;
+}
+#p3_2_d_tb{
+    position: absolute;
+    top: 14rem;
+    left: 13rem;
+}
+#p3_2_rs{
+    position: absolute;
+    top: 13.5rem;
+    left: 17rem;
+    font-size: 1.6rem;
+}
+#p3_2_rs span{
+    font-size: 2rem;
+}
+
+
+/*04页面*/
+#p4_1_img{
+    position: absolute;
+    top: 18rem;
+    left: 0rem;
+    pointer-events: auto;
+     transform: scale(1.2);
+}
+#p4_2_img{
+    position: absolute;
+    top: 36rem;
+    left: 0rem;
+    pointer-events: auto;
+     transform: scale(1.2);
+}
+#p4_3_img{
+    position: absolute;
+    top: 54rem;
+    left: 0rem;
+    pointer-events: auto;
+     transform: scale(1.2);
+}
+
+
+#p4_1_div{
+    position: absolute;
+    top: 13rem;
+    left: 2rem;
+    width: 38rem;
+    height: 40rem;  
+}
+#p4_1_img{
+    position: absolute;
+    top: -8rem;
+    left: -19rem;
+    transform: scale(0.45);
+}
+#p4_1_div_bt{
+    width: 38rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: center;
+    white-space: pre;
+}
+#p4_db_img{
+    position: absolute;
+    top: 33rem;
+    left: 0rem;
+}
+#p4_1_rs{
+     position: absolute;
+     top: 32.6rem;
+     left: 11rem;
+     font-size: 1.6rem;
+     color: white;
+     vertical-align: middle;
+     height: 4rem;
+     line-height: 4rem;
+}
+#p4_1_rs span{
+    font-size: 2.3rem;
+    vertical-align: bottom;
+}
+
+
+#p4_2_div{
+    position: absolute;
+    top: 52rem;
+    left: 2rem;
+    width: 19rem;
+    height: 16rem;
+    border-right: 0.05rem solid black;
+}
+#p4_2_div_bt{
+   position: absolute;
+   top: 4rem;
+   width: 19rem;
+   font-size: 2rem;
+   font-weight: 700;
+}
+#p4_2_d_tb{
+    position: absolute;
+    top: 14rem;
+    left: 0rem;
+}
+#p4_2_rs{
+    position: absolute;
+    top: 13.5rem;
+    left: 4rem;
+    font-size: 1.6rem;
+}
+#p4_2_rs span{
+    font-size: 2rem;
+}
+
+#p4_3_div{
+    position: absolute;
+    top: 52rem;
+    left: 21rem;
+    width: 19rem;
+    height: 16rem;
+}
+#p4_3_div_bt{
+  width: 19rem;
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+  position: absolute;
+  top: 3rem;
+}
+#p4_3_d_tb{
+   position: absolute;
+    top: 14rem;
+    left: 1rem;
+}
+#p4_3_rs{
+    position: absolute;
+    top: 13.5rem;
+    left: 4rem;
+    font-size: 1.6rem;
+}
+#p4_3_rs span{
+    font-size: 2rem;
+}
+
+
+
+/*页码*/
+#p1_1_ym{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #a9a0a0;
+}
+#p2_1_ym{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #a9a0a0;
+}
+#p2_2_ym{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #a9a0a0;
+}
+#p2_3_ym{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #a9a0a0;
+}
+#p3_ym{
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #a9a0a0;
+}
+
+
+#gif_lod{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+#jt_lod{
+    position: absolute;
+    top: 5rem;
+    left: 0rem;
+}
+#gif_lod_wz{
+    position: absolute;
+    top: 33rem;
+    left: 16rem;
+    font-size: 2rem;
+    color: black;
+}
+
+
+#p7{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+}
+#jietudiv{
+    position: absolute;
+    left: 4rem;
+    top: 0rem;
+    width: 40rem;
+    height: 65rem;
+}
+#canimg{
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    pointer-events: auto;
+    opacity:0;
+}
+#jt_wz{
+    position: absolute;
+    top: 68rem;
+    left: 18rem;
+    font-size: 1.8rem;
+    color: black;
+}
+#jt_btn{
+   position: absolute;
+    top: 72rem;
+    left: 18rem;
+    width: 10rem;
+    height: 2.6rem;
+    font-size: 2rem;
+    color: black;
+    border: 0.1rem solid black;
+    text-align: center;
+    line-height: 2.6rem;
+}
+
+.hb_btn{
+    position: absolute;
+    bottom: 1.3rem;
+    right: 5rem;
+    pointer-events: auto; 
+}
+
+#ewm{
+   position: absolute;
+    bottom: 0rem;
+    right: 3rem;
+}
