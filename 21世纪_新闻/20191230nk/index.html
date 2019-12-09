@@ -1,0 +1,325 @@
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>21世纪经济报道年终特刊智能报</title>
+    <!-- <base href="{$shareurl}/static/wechat/"/> -->
+    <!-- <base href="https://h5-project.oss-cn-shenzhen.aliyuncs.com/yahang/"/> -->
+    <!-- <base href="https://cdn.maopujingpai.com/21SJ_xw/" /> -->
+    <!-- <meta name="viewport" content="width=device-width,user-scalable=no"> -->
+    <script type="text/javascript" src="js/viewport.js?v=22"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css?v=22">
+    <link rel="stylesheet" type="text/css" href="css/swiper.min.css?v=22">
+    <script type="text/javascript" src="js/jquery-2.0.0.min.js?v=22"></script>
+    <script type="text/javascript" src="js/jquery.imgpreload.min.js?v=22"></script>
+    <script type="text/javascript" src="js/jquery.qrcode.min.js?v=22"></script>
+    <script src="https://res.wx.qq.com/open/js/jweixin-1.3.0.js?v=22"></script>
+    <script type="text/javascript" src="js/step2.js?v=22"></script>
+    <script type="text/javascript" src="js/index.js?v=22"></script>
+    <script type="text/javascript" src="js/swiper.min.js?v=22"></script>
+    <script type="text/javascript" src="js/canvas_peanuts.js?v=22"></script>
+    <script type="text/javascript" src="js/html2canvas_new.js?v=22"></script>
+
+    <script type="text/javascript">
+        var number1 = 666;
+        var number2 = 999;
+    </script>
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <p id="lod_time"></p>
+        <img src="images/loading/lod.png?v=22" id="lod_img" class="img">
+
+        <div id="lod_jdt_k">
+            <div id="lod_jdt"></div>
+        </div>
+
+    </div>
+
+    <div id="app">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <img src="images/p1/p1_img.png?v=22" class="bg" id="p1_img">
+                    <img src="images/p1/red.png" id="redrect">
+                    <img src="images/p1/green.png" id="greenrect">
+                    <img src="images/p1/cloud1.png" id="cloud1">
+                    <img src="images/p1/cloud2.png" id="cloud2">
+                    <img src="images/p1/p1_title1.png" id="title1">
+                    <img src="images/p1/p1_title2.png" id="title2">
+                    <img src="images/p1/hb_btn.png?v=22" class="hb_btn">
+                    <div id="p1_1_ym">01</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/p1/2_bg.png?v=22" class="bg">
+
+                    <div id="p2_1_div"></div>
+
+                    <img src="images/p1/2_1_img.png?v=22" id="p2_2_img" class="img">
+
+                    <div id="p2_3_div"></div>
+
+                    <div id="p2_4_div"></div>
+
+                    <img src="images/p1/d_tb.png?v=22" class="d_tb">
+
+                    <div id="p2_dt_wz"></div>
+
+                    <img src="images/p1/hb_btn.png?v=22" class="hb_btn">
+
+                    <div id="p2_1_ym">02</div>
+
+
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/p1/2_bg.png?v=22" class="bg">
+
+                    <div id="p3_1_div">
+                        <div id="p3_1_div_bt"></div>
+                        <img src="images/p1/p3_1_img.png?v=22" id="p3_1_img" class="img">
+                        <img src="images/p1/db_img.png" id="p3_db_img" class="img">
+                        <div id="p3_1_rs">全网有 <span>4566</span> 人在看</div>
+                    </div>
+
+                    <div id="p3_2_div">
+                        <div id="p3_2_div_bt"></div>
+                        <img src="images/p1/d_tb.png?v=22" id="p3_2_d_tb">
+                        <div id="p3_2_rs"><span>2356</span>人在看</div>
+                    </div>
+
+                    <img src="images/p1/hb_btn.png?v=22" class="hb_btn">
+
+                    <div id="p3_ym">03</div>
+                </div>
+
+                <div class="swiper-slide">
+                    <img src="images/p1/2_bg.png?v=22" class="bg">
+
+                    <div id="p4_1_div">
+                        <div id="p4_1_div_bt"></div>
+                        <img src="images/p1/p4_1_img.png?v=22" id="p4_1_img">
+                        <img src="images/p1/db_img.png" id="p4_db_img" class="img">
+                        <div id="p4_1_rs">全网有 <span>6325</span> 人在看</div>
+                    </div>
+
+                    <div id="p4_2_div">
+                        <div id="p4_2_div_bt"></div>
+                        <img src="images/p1/d_tb.png?v=22" id="p4_2_d_tb">
+                        <div id="p4_2_rs"><span>5321</span>人在看</div>
+                        <!-- <div id="p4_2_div_nr"></div> -->
+                    </div>
+
+                    <div id="p4_3_div">
+                        <div id="p4_3_div_bt"></div>
+                        <img src="images/p1/d_tb.png?v=22" id="p4_3_d_tb">
+                        <div id="p4_3_rs"><span>6879</span>人在看</div>
+                        <!-- <div id="p4_3_div_nr"></div> -->
+                    </div>
+
+                    <img src="images/p1/hb_btn.png?v=22" class="hb_btn">
+
+                    <div id="p2_3_ym">04</div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="gif_lod">
+        <img src="images/p1/jt_lod.gif?v=22" id="jt_lod" class="img">
+        <p id="gif_lod_wz">图片生成中......</p>
+    </div>
+
+    <div id="p7">
+
+        <div id="jietudiv">
+            <img src="images/p1/p1_img.png?v=22" class="img" id="jietudiv_1_img">
+            <img src="images/p1/ewm.png?v=22" id="ewm">
+        </div>
+
+        <img src="" id="canimg" class="img">
+
+        <p id="jt_wz">长按图片保存</p>
+
+        <div id="jt_btn">关闭</div>
+    </div>
+
+    <!-- 适配 -->
+    <script type="text/javascript">
+
+        // 底部文字
+        $("#p2_dt_wz").html('全网有' + number1 + '人在看');
+
+        $("#p3_dt_wz").html('全网有' + number2 + '人在看');
+
+        // 02页面文字内容
+        $("#p2_1_div").html('专访中国(海南)改革发展研究院院长迟福林：');
+
+        var text_02 = '要在对标国际经贸规则中<br />深化市场化改革';
+        var text_02_1 = palindrome(text_02);
+        $("#p2_3_div").html(text_02_1);
+
+        $("#p2_4_div").html('迟福林认为，我国以处理好政府与市场关系为重点，建立并完善社会主义市场经济体制的改革实践，这是经济发展史上独特而又重大的创举。');
+
+        // 03页面文字
+        var text_03_1 = '引领中国美好人居 万科35年惊艳蝶变';
+        var text_03_1_1 = palindrome(text_03_1);
+        $("#p3_1_div_bt").html(text_03_1_1);
+
+
+        var text_03_2 = '因地制宜精准扶贫: 华夏幸福的涞源尝试';
+        var text_03_2_1 = palindrome(text_03_2);
+        console.log(text_03_2_1);
+        $("#p3_2_div_bt").html(text_03_2_1);
+
+
+        // 04页面文字
+        var text_04_1 = '再探广东“四小虎”: “粤家军”逐浪湾区建设大潮';
+        var text_04_1_1 = palindrome(text_04_1);
+        $("#p4_1_div_bt").html(text_04_1_1);
+
+
+        $("#p4_2_div_bt").html('因地制宜 精准扶贫：<br />华夏幸福的涞源尝试');
+
+        $("#p4_3_div_bt").html('什么样的沃土孕育<br />“冠军力量”？广东<br />跃起“新隐形冠军”');
+
+
+
+        function palindrome(str) {
+            var newStr = str.replace(/\s/g, '\n');
+            return newStr;
+        }
+
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+
+        $(function () {
+            var bs = $(window).width();
+            var hs = $(window).height();
+            aa = bs / hs;
+            console.log(aa);
+            if (aa < 0.49) {
+
+                $(".iphonex").css('top', '130rem');
+
+            } else if (aa > 0.49 && aa < 0.53) {
+
+                $(".iphonex").css('top', '10rem');
+
+                // $("#app").css('margin-top', '18%');
+
+            } else if (aa > 0.53 && aa < 0.59) {
+
+                $(".iphonex").css('top', '0rem');
+
+                // $("#app").css('margin-top', '10%');
+
+            } else if (aa > 0.59 && aa < 0.65) {
+
+
+            } else if (aa > 0.65) {
+                $("#app").css('transform', 'scale(0.9)');
+
+            }
+
+        })
+
+        // var audio = document.getElementById('audio');
+        // var btn = document.getElementById('btn');
+
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            // audio.play();
+            // btn.play();
+            // btn.pause();
+        }, false);
+    </script>
+
+    <!-- 页面 -->
+    <script type="text/javascript">
+        // loding 加载
+        function LoadEach(num) {
+            // $('#loading_num').html(num+'%');
+            star_time();
+            // $('#lod_jdt').css('width',2.19*num/10+'rem');
+        }
+
+        var numbe = 0;
+        var interval_time = null;
+
+        function star_time() {
+            if (interval_time != null) {
+                clearInterval(interval_time);
+                interval_time = null;
+            }
+            interval_time = setInterval(time_kz, 200);
+        }
+
+        function time_kz() {
+            numbe += 1;
+            $('#lod_jdt').css('width', numbe + 'rem');
+            if (numbe == 22) {
+                clearInterval(interval_time);
+                strat_111();
+            }
+        }
+
+        function strat_111() {
+            $("#loading").css('display', 'none');
+            $(".swiper-container").css('visibility', 'visible');
+        }
+        // var shareId='';//获取链接中的分享id
+        // if ($.getUrlParam('share')!=null) {
+        //     shareId=decodeURI($.getUrlParam('share'));
+        // }
+
+        // 开始
+        function starts() {
+            // setTimeout(function(){
+            //     $("#loading").css('display','none');
+            //     $(".swiper-container").css('visibility','visible');
+
+            // },1000);   
+        }
+
+        //获取链接参数
+        (function ($) {
+            $.getUrlParam = function (name) {
+                var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+                var r = window.location.search.substr(1).match(reg);
+                if (r != null) return unescape(r[2]); return null;
+            }
+        })(jQuery);
+
+        // 页面默认事件
+        var jinzhi = 0;
+        document.addEventListener("touchmove", function (e) {
+            if (jinzhi == 0) {
+                e.preventDefault();
+                e.stopPropagation();
+            }
+        }, { passive: false });
+
+        // 加载图片
+        page.init(['p1'], [2], ['p1/2_1_img.png', 'p1/2_bg.png', 'p1/4_bg.png', 'p1/bg.jpg', 'p1/d_tb.png', 'p1/d_tb_b.png', 'p1/ewm.png', 'p1/hb_01.png', 'p1/hb_02.png', 'p1/hb_03.png', 'p1/hb_04.png', 'p1/hb_btn.png', 'p1/jt_lod.gif', 'p1/p1_img.png', 'p1/p3_1_img.png', 'p1/p4_1_img.png',], 'images/', '?v=22');
+
+    </script>
+
+</body>
+
+</html>
