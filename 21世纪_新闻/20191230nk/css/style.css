@@ -245,22 +245,22 @@ body{
     left: 5%;
     top: 24rem;
     width: 25%;
-    animation: cloudAnimation 6s infinite linear alternate forwards;
-    -moz-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Firefox */
-    -webkit-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Safari 和 Chrome */
-    -o-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Opera */
+    animation: cloud1Animation 6s infinite linear alternate forwards;
+    -moz-animation: cloud1Animation 6s infinite linear alternate forwards;	/* Firefox */
+    -webkit-animation: cloud1Animation 6s infinite linear alternate forwards;	/* Safari 和 Chrome */
+    -o-animation: cloud1Animation 6s infinite linear alternate forwards;	/* Opera */
 }
 #cloud2{
     width: 50%;
     position: absolute;
     left: 30%;
     top: 22rem;
-    animation: cloudAnimation 6s infinite linear alternate forwards;
-    -moz-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Firefox */
-    -webkit-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Safari 和 Chrome */
-    -o-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Opera */
+    animation: cloud2Animation 8s infinite linear alternate forwards;
+    -moz-animation: cloud2Animation 8s infinite linear alternate forwards;	/* Firefox */
+    -webkit-animation: cloud2Animation 8s infinite linear alternate forwards;	/* Safari 和 Chrome */
+    -o-animation: cloud2Animation 8s infinite linear alternate forwards;	/* Opera */
 }
-@keyframes cloudAnimation
+@keyframes cloud1Animation
 {
     0%{transform: translate(0rem,0rem);}
     25%{transform: translate(1rem,0rem);}
@@ -268,7 +268,7 @@ body{
     75%{transform: translate(1rem,0rem);}
     100%{transform: translate(0rem,0rem);}
 }
-@-moz-keyframes cloudAnimation /* Firefox */
+@-moz-keyframes cloud1Animation /* Firefox */
 {
     0%{-moz-transform: translate(0rem,0rem);}
     25%{-moz-transform: translate(1rem,0rem);}
@@ -276,7 +276,7 @@ body{
     75%{-moz-transform: translate(1rem,0rem);}
     100%{-moz-transform: translate(0rem,0rem);}
 }
-@-webkit-keyframes cloudAnimation /* Safari 和 Chrome */
+@-webkit-keyframes cloud1Animation /* Safari 和 Chrome */
 {
     0%{-webkit-transform: translate(0rem,0rem);}
     25%{-webkit-transform: translate(1rem,0rem);}
@@ -284,7 +284,39 @@ body{
     75%{-webkit-transform: translate(1rem,0rem);}
     100%{-webkit-transform: translate(0rem,0rem);}
 }
-@-o-keyframes cloudAnimation /* Opera */
+@-o-keyframes cloud1Animation /* Opera */
+{
+    0%{-o-transform: translate(0rem,0rem);}
+    25%{-o-transform: translate(1rem,0rem);}
+    50%{-o-transform: translate(2rem,0rem);}
+    75%{-o-transform: translate(1rem,0rem);}
+    100%{-o-transform: translate(0rem,0rem);}
+}
+@keyframes cloud2Animation
+{
+    0%{transform: translate(0rem,0rem);}
+    25%{transform: translate(1rem,0rem);}
+    50%{transform: translate(2rem,0rem);}
+    75%{transform: translate(1rem,0rem);}
+    100%{transform: translate(0rem,0rem);}
+}
+@-moz-keyframes cloud2Animation /* Firefox */
+{
+    0%{-moz-transform: translate(0rem,0rem);}
+    25%{-moz-transform: translate(1rem,0rem);}
+    50%{-moz-transform: translate(2rem,0rem);}
+    75%{-moz-transform: translate(1rem,0rem);}
+    100%{-moz-transform: translate(0rem,0rem);}
+}
+@-webkit-keyframes cloud2Animation /* Safari 和 Chrome */
+{
+    0%{-webkit-transform: translate(0rem,0rem);}
+    25%{-webkit-transform: translate(1rem,0rem);}
+    50%{-webkit-transform: translate(2rem,0rem);}
+    75%{-webkit-transform: translate(1rem,0rem);}
+    100%{-webkit-transform: translate(0rem,0rem);}
+}
+@-o-keyframes cloud2Animation /* Opera */
 {
     0%{-o-transform: translate(0rem,0rem);}
     25%{-o-transform: translate(1rem,0rem);}
