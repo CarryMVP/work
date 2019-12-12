@@ -55,6 +55,11 @@ body{
     animation:huxi 2s linear infinite;
     -webkit-animation: huxi 2s linear infinite;
 }
+@keyframes huxi{
+    from{opacity: 0.9;transform: scale(1);}
+    50%{opacity: 1;transform: scale(1.05);}
+    to{opacity: 0.9;transform: scale(1);}
+}
 @-webkit-keyframes huxi{
     from{opacity: 0.9;transform: scale(1);}
     50%{opacity: 1;transform: scale(1.05);}
