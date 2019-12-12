@@ -159,7 +159,7 @@ body{
 #redrect{
     position: absolute;
     left: 10%;
-    top: 10rem;
+    top: 12rem;
     width: 60%;
     animation: redrectAnimation 6s infinite linear alternate forwards;
     -moz-animation: redrectAnimation 6s infinite linear alternate forwards;	/* Firefox */
@@ -169,7 +169,7 @@ body{
 #greenrect{
     position: absolute;
     left: 15%;
-    top: 12rem;
+    top: 14rem;
     width: 70%;
     animation: greenrectAnimation 6s infinite linear alternate forwards;
     -moz-animation: greenrectAnimation 6s infinite linear alternate forwards;	/* Firefox */
@@ -243,7 +243,7 @@ body{
 #cloud1{
     position: absolute;
     left: 5%;
-    top: 22rem;
+    top: 24rem;
     width: 25%;
     animation: cloudAnimation 6s infinite linear alternate forwards;
     -moz-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Firefox */
@@ -254,7 +254,7 @@ body{
     width: 50%;
     position: absolute;
     left: 30%;
-    top: 20rem;
+    top: 22rem;
     animation: cloudAnimation 6s infinite linear alternate forwards;
     -moz-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Firefox */
     -webkit-animation: cloudAnimation 6s infinite linear alternate forwards;	/* Safari 和 Chrome */
@@ -295,7 +295,7 @@ body{
 #title1{
     position: absolute;
     left: 10%;
-    top: 12rem;
+    top: 14rem;
     width: 7%;
     animation: titleAnimation 2s linear forwards;
     -moz-animation: titleAnimation 2s linear forwards;	/* Firefox */
@@ -306,7 +306,7 @@ body{
 #title2{
     position: absolute;
     left: 20%;
-    top: 14rem;
+    top: 16rem;
     width: 15%;
     animation: titleAnimation 2s linear forwards;
     -moz-animation: titleAnimation 2s linear forwards;	/* Firefox */
