@@ -157,7 +157,6 @@
 
     <!-- 适配 -->
     <script type="text/javascript">
-
         // 底部文字
         $("#p2_dt_wz").html('全网有' + number1 + '人在看');
 
@@ -209,7 +208,7 @@
             },
         });
 
-        $(function () {
+        $(function() {
             var bs = $(window).width();
             var hs = $(window).height();
             aa = bs / hs;
@@ -243,7 +242,7 @@
         // var audio = document.getElementById('audio');
         // var btn = document.getElementById('btn');
 
-        document.addEventListener("WeixinJSBridgeReady", function () {
+        document.addEventListener("WeixinJSBridgeReady", function() {
             // audio.play();
             // btn.play();
             // btn.pause();
@@ -298,26 +297,28 @@
         }
 
         //获取链接参数
-        (function ($) {
-            $.getUrlParam = function (name) {
+        (function($) {
+            $.getUrlParam = function(name) {
                 var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
                 var r = window.location.search.substr(1).match(reg);
-                if (r != null) return unescape(r[2]); return null;
+                if (r != null) return unescape(r[2]);
+                return null;
             }
         })(jQuery);
 
         // 页面默认事件
         var jinzhi = 0;
-        document.addEventListener("touchmove", function (e) {
+        document.addEventListener("touchmove", function(e) {
             if (jinzhi == 0) {
                 e.preventDefault();
                 e.stopPropagation();
             }
-        }, { passive: false });
+        }, {
+            passive: false
+        });
 
         // 加载图片
         page.init(['p1'], [2], ['p1/p1_title1.png', 'p1/p1_title2.png', 'p1/p1_cloud1.png', 'p1/p1_cloud2.png', 'p1/red.png', 'p1/green.png', 'p1/2_1_img.png', 'p1/2_bg.png', 'p1/4_bg.png', 'p1/bg.jpg', 'p1/d_tb.png', 'p1/d_tb_b.png', 'p1/ewm.png', 'p1/hb_01.png', 'p1/hb_02.png', 'p1/hb_03.png', 'p1/hb_04.png', 'p1/hb_btn.png', 'p1/jt_lod.gif', 'p1/p1_img.png', 'p1/p3_1_img.png', 'p1/p4_1_img.png'], 'images/', '?v=22');
-
     </script>
 
 </body>
