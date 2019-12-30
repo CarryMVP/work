@@ -389,13 +389,13 @@ body {
 
 #lod_img {
     position: absolute;
-    top: 30rem;
+    top: 27rem;
     left: 0rem;
 }
 
 #lod_jdt_k {
     position: absolute;
-    top: 44rem;
+    top: 45rem;
     left: 12.5rem;
     background-color: #d6cfcf;
     width: 21.9rem;
@@ -404,7 +404,7 @@ body {
 }
 
 #lod_jdt {
-    background-color: #0f3e0f;
+    background-color: #fff;
     width: 21.9rem;
     height: 0.5rem;
     border-radius: 1rem;
@@ -412,10 +412,17 @@ body {
 
 #lod_time {
     position: absolute;
-    top: 25rem;
-    left: 12rem;
-    font-size: 4rem;
-    color: #0f3e0f;
+    top: 20rem;
+    left: 12.5rem;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+#lod_logo {
+    position: absolute;
+    top: 50rem;
+    left: em;
+    font-size: 3.5rem;
 }
 
 .swiper-container {
@@ -1357,6 +1364,7 @@ body {
 }
 
 #ewm {
+    width: 20%;
     position: absolute;
     bottom: 0rem;
     right: 3rem;
